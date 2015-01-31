@@ -1,0 +1,6 @@
+<subsystem xmlns="urn:org.jboss.as.selfmonitor:1.0">
+    <metrics>
+        <metric name="subsystem_transactions_number-of-aborted-transactions" path="/subsystem=transactions" enabled="false" interval="5" metric-type="LONG" metric-description="The number of aborted (i.e. rolledback) transactions." nillable="true"/>
+        <metric name="subsystem_transactions_number-of-application-rollbacks" path="/subsystem=transactions" enabled="false" interval="5" metric-type="LONG" metric-description="The number of transactions that have been rolled back by application request. This includes those that timeout, since the timeout behavior is considered an attribute of the application configuration." nillable="true"/>
+    </metrics>
+</subsystem>
